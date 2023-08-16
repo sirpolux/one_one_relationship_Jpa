@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public class AppDAOImpl implements  IAppDAO{
 
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
 
     @Autowired
     public AppDAOImpl(EntityManager entityManager){
